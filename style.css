@@ -1,0 +1,229 @@
+/* Common Shared Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Oswald";
+    background-color: #fafafa;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary{
+    padding: 8px 20px;
+    font-size: 18px;
+    color: #013366;
+    background-color: #fafafa;
+    border-radius: 80px;
+    border: none;
+    border: 1px solid gainsboro;
+}
+.btn-primary:hover{
+    background-color: #013366;
+    color: #fafafa;
+}
+.btn-secondary{
+    padding: 8px 20px;
+    font-size: 20px;
+    color: #fafafa;
+    background-color: #013366;
+    border-radius: 80px;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #fafafa;
+    color: #013366;
+}
+
+/* Nav Related Styles */
+nav{
+    width: 100%;
+    height: 80px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 50px;
+}
+
+#nav-title{
+    color: #000;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    gap: 8px;
+}
+
+#nav-title h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#menu-burger{
+    display: none;
+}
+
+#nav-menu,
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu li>a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #013366;
+}
+
+.menu li>a:hover{
+    font-weight: 500;
+}
+
+#cart{
+    padding: 8px 10px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #013366;
+    color: #013366;
+    background-color: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#cart:hover{
+    background-color:  #013366;
+    color: #fafafa;   
+}
+
+/* Nav Bar Responsive */
+@media only screen and (max-width: 600px) {
+    nav{
+        padding: 0px 10px;
+    }
+    #nav-title{
+        width: 90%;
+    }
+    #menu-burger{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    #nav-menu{
+        display: none;
+    }
+}
+
+/* Banner Related Styles */
+#banner{
+    width: 100%;
+    height: 100%;
+    background-color: #E3EFF7;
+    border-radius: 40px;
+
+}
+
+#banner-top{
+    height: 80%;
+}
+
+#banner-bottom{
+    width: 100%;
+    height: 20%;
+    background-color: #0070E3;
+    border-end-start-radius: 40px;
+    border-end-end-radius: 40px;
+    padding: 30px 300px;
+
+    
+}
+
+#bottom-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+.special{
+    width: 100%;
+    color: #fafafa;
+    text-align: center;
+
+}
+
+.special img{
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: bisque;
+
+}
+
+.special p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+    #banner-bottom{
+        height: 40%;
+        padding: 20px;   
+    }
+    
+    #bottom-content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 14px;
+        column-gap: 15px;  
+    }
+    .special{
+        width: 70%;
+        margin-left: 20px;
+    }
+    .special:nth-child(3)>p{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+/* menu{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */
+
+
+
+
